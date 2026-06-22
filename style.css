@@ -1,0 +1,44 @@
+body{
+font-family:Arial,sans-serif;
+background:#faf7f2;
+margin:0;
+}
+header{
+text-align:center;
+padding:30px;
+background:white;
+}
+.products{
+width:90%;
+margin:auto;
+}
+.card{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+.slider{
+display:flex;
+overflow-x:auto;
+gap:10px;
+scroll-behavior:smooth;
+}
+.slider img{
+width:300px;
+border-radius:10px;
+}
+a{
+display:inline-block;
+padding:12px 20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+footer{
+text-align:center;
+padding:20px;
+background:white;
+}
