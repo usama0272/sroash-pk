@@ -1,1 +1,252 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#FAF7F2;
+    color:#3A2E2E;
+    font-family:'Poppins',sans-serif;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+header{
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 20px rgba(0,0,0,.05);
+}
+
+.logo h1{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#3A2E2E;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#B08B6B;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero-content h1{
+    font-family:'Playfair Display',serif;
+    font-size:70px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    color:#777;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 40px;
+    background:#B08B6B;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#967152;
+}
+
+/* COLLECTION */
+
+.collection{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:100px 0;
+}
+
+.collection h2{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:50px;
+    margin-bottom:60px;
+}
+
+.product-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    margin-bottom:50px;
+    box-shadow:0 10px 40px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
+    width:100%;
+    display:block;
+}
+
+.product-info{
+    padding:30px;
+}
+
+.product-info h3{
+    font-family:'Playfair Display',serif;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.product-info p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.product-info h4{
+    font-size:28px;
+    color:#B08B6B;
+    margin-bottom:25px;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.whatsapp-btn:hover{
+    background:#1fa955;
+}
+
+/* ABOUT */
+
+.about{
+    width:80%;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    padding:100px 0;
+}
+
+.about h2{
+    font-family:'Playfair Display',serif;
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    font-family:'Playfair Display',serif;
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+.instagram-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 40px;
+    background:#E1306C;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+}
+
+.instagram-btn:hover{
+    opacity:.9;
+}
+
+/* FLOATING WHATSAPP */
+
+.floating-whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:18px 25px;
+    border-radius:50px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    z-index:999;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    gap:20px;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.collection h2,
+.about h2,
+.contact h2{
+    font-size:38px;
+}
+
+.product-info h3{
+    font-size:28px;
+}
+
+}
